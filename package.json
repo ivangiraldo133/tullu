@@ -1,0 +1,23 @@
+{
+  "name": "base-de-dactos",
+  "version": "1.0.0",
+  "description": "mi primera add de node",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.mjs"
+  },
+  "keywords": [
+    "curso"
+  ],
+  "author": "ivan rene giraldo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.15.6",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
