@@ -1,0 +1,75 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tullú - Detalles Personalizados</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <button id="loginBtn">Iniciar Sesión</button>
+      <button id="abrirRegistro">Registrarse</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="presentation">
+      <h2>Bienvenido a</h2>
+      <img src="imagenes/logo 3.png" alt="Logo de Tullú" class="logo" />
+      <p>Descubre regalos personalizados únicos y hechos con amor para cada ocasión especial. Mereces celebrar, hazlo con Tullú.</p>
+    </section>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slider-track" id="sliderTrack">
+        <img src="imagenes/imagen 1.jpeg" alt="" />
+        <img src="imagenes/imagen 2.jpeg" alt="" />
+        <img src="imagenes/imagen 3.jpeg" alt="" />
+        <img src="imagenes/imagen 4.jpeg" alt="" />
+        <img src="imagenes/imagen 9.jpeg" alt="" />
+        <img src="imagenes/imagen 10.jpeg" alt="" />
+      </div>
+    </div>
+  </main>
+
+  <a href="productos.html" class="volver">Ir a Productos</a>
+
+  <!-- Modales -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h3>Iniciar Sesión</h3>
+      <form id="loginForm">
+        <input type="text" id="loginNombre" placeholder="Nombre" required />
+        <input type="password" id="loginPassword" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('registerModal')">&times;</span>
+      <h3>Crear Cuenta</h3>
+      <form id="registerForm">
+        <input type="text" id="nombre" placeholder="Nombres" required />
+        <input type="text" id="apellido" placeholder="Apellidos" required />
+        <input type="number" id="telefono" placeholder="Teléfono" required />
+        <input type="email" id="email" placeholder="Correo electrónico" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" required />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+
+
+<script src="home.js"></script>
+
+</body>
+</html>!
+
